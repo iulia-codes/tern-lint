@@ -26,7 +26,7 @@ CodeMirror.ternLint = function(text, updateLinting, options, editor) {
   files.push({
     type : "full",
     name : "[doc]",
-    text : cm.getValue()
+    text : editor ? cm.getValue() : cm
   });
 
   var doc = {
